@@ -1,0 +1,8 @@
+banner:
+  enable: true
+  image: "images/bg01.png"
+  contents: "**Arquitectos RP**"
+items:
+  - type: heading
+    heading: "Nuestro sitio web está en construcción."
+    contents: "Estamos preparando un nuevo espacio en línea para Arquitectos RP. Vuelve pronto."

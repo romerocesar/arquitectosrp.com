@@ -1,6 +1,10 @@
 # arquitectosrp.com
 
-Simple bilingual static site built with [Hugo](https://gohugo.io/) and deployed with GitHub Pages.
+Simple bilingual static site built with [Hugo](https://gohugo.io/), using the [Arcana](https://github.com/half-duplex/hugo-arcana) theme as a Hugo Module, and deployed with GitHub Pages.
+
+## Dependencies
+
+Install Hugo Extended and Go. Hugo uses Go's module system to download the Arcana theme from `go.mod` / `go.sum`.
 
 ## Local development
 

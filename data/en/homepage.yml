@@ -1,0 +1,8 @@
+banner:
+  enable: true
+  image: "images/bg01.png"
+  contents: "**Arquitectos RP**"
+items:
+  - type: heading
+    heading: "Our website is under construction."
+    contents: "We are preparing a new online home for Arquitectos RP. Please check back soon."

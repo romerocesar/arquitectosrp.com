@@ -2,19 +2,19 @@
 
 ## Project Structure & Module Organization
 
-This repository is a small bilingual static site built with Hugo.
+This repository is a small bilingual static site built with Hugo and the Arcana theme via Hugo Modules.
 
 - `hugo.yaml` contains site configuration, language settings, and disabled Hugo output kinds.
+- `go.mod` and `go.sum` pin the Arcana Hugo Module dependency.
 - `content/_index.en.md` and `content/_index.es.md` provide the English and Spanish home page content.
-- `layouts/_default/baseof.html` defines the shared HTML frame.
-- `layouts/index.html` renders the home page and language switcher.
-- `static/css/site.css` contains site styles served as a static asset.
+- `data/en/homepage.yml` and `data/es/homepage.yml` configure Arcana homepage sections.
 - `static/CNAME` configures the custom GitHub Pages domain.
 
 There is currently no dedicated test directory or application source tree.
 
 ## Build, Test, and Development Commands
 
+- `hugo mod tidy` updates `go.mod` and `go.sum` after module import changes.
 - `hugo server` starts a local development server with live reload. Use the URL printed by Hugo; English is at `/` and Spanish is at `/es/`.
 - `hugo --gc --minify` creates a production build and removes unused generated files.
 - `hugo` runs a normal local build without minification.
@@ -23,11 +23,11 @@ This project does not define `npm`, `make`, or custom test commands.
 
 ## Coding Style & Naming Conventions
 
-Use two-space indentation in Hugo templates, YAML, Markdown front matter, and CSS blocks. Keep Hugo templates simple and prefer existing partial-free structure unless reuse becomes necessary.
+Use two-space indentation in Hugo templates, YAML, Markdown front matter, and CSS blocks. Prefer theme configuration and data files over local template overrides.
 
 Content files should follow the existing language suffix pattern: `_index.en.md`, `_index.es.md`. Keep translation keys and page parameters aligned across languages so both localized pages render the same layout.
 
-CSS uses custom properties in `:root`, semantic class names such as `.language-nav` and `.notice`, and responsive rules near the bottom of `static/css/site.css`. Add styles in the same file unless the stylesheet becomes difficult to scan.
+For Arcana-specific styling, prefer `assets/sass/custom.scss` if custom styles are needed. Avoid editing downloaded module files.
 
 ## Testing Guidelines
 
