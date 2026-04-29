@@ -1,0 +1,24 @@
+baseURL: "https://arquitetctosrp.com/"
+title: "Arquitetctos RP"
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    title: "Arquitetctos RP"
+  es:
+    languageName: "Español"
+    weight: 2
+    title: "Arquitetctos RP"
+
+disableKinds:
+  - taxonomy
+  - term
+  - RSS
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

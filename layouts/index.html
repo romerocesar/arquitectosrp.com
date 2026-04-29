@@ -1,0 +1,17 @@
+{{ define "main" }}
+  <main class="site-shell">
+    <nav class="language-nav" aria-label="Language">
+      {{ range .AllTranslations }}
+        <a class="{{ if eq .Lang $.Lang }}is-active{{ end }}" href="{{ .RelPermalink }}" hreflang="{{ .Lang }}">
+          {{ .Language.LanguageName }}
+        </a>
+      {{ end }}
+    </nav>
+
+    <section class="notice" aria-labelledby="page-title">
+      <p class="brand">{{ .Site.Title }}</p>
+      <h1 id="page-title">{{ .Params.message }}</h1>
+      <p class="details">{{ .Params.details }}</p>
+    </section>
+  </main>
+{{ end }}
