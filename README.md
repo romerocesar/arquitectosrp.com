@@ -1,4 +1,4 @@
-# arquitetctosrp.com
+# arquitectosrp.com
 
 Simple bilingual static site built with [Hugo](https://gohugo.io/) and deployed with GitHub Pages.
 
