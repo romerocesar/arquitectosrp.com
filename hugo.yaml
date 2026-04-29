@@ -1,5 +1,5 @@
 baseURL: "https://arquitectosrp.com/"
-title: "Arquitetctos RP"
+title: "Arquitectos RP"
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: false
 
@@ -7,11 +7,11 @@ languages:
   en:
     languageName: "English"
     weight: 1
-    title: "Arquitetctos RP"
+    title: "Arquitectos RP"
   es:
     languageName: "Español"
     weight: 2
-    title: "Arquitetctos RP"
+    title: "Arquitectos RP"
 
 disableKinds:
   - taxonomy
