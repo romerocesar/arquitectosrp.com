@@ -17,6 +17,27 @@ languages:
         - name: "Home"
           pageRef: "/"
           weight: 1
+        - name: "Society"
+          pageRef: "/society"
+          weight: 2
+        - name: "Projects"
+          pageRef: "/projects"
+          weight: 3
+        - name: "BIM"
+          pageRef: "/bim"
+          weight: 4
+        - name: "Downloads"
+          pageRef: "/downloads"
+          weight: 5
+        - name: "AEC services"
+          pageRef: "/aec-services"
+          weight: 6
+        - name: "Contacts"
+          pageRef: "/contacts"
+          weight: 7
+        - name: "Follow us"
+          pageRef: "/follow-us"
+          weight: 8
   es:
     languageName: "Español"
     weight: 2
@@ -26,6 +47,27 @@ languages:
         - name: "Inicio"
           pageRef: "/"
           weight: 1
+        - name: "Sociedad"
+          pageRef: "/society"
+          weight: 2
+        - name: "Proyectos"
+          pageRef: "/projects"
+          weight: 3
+        - name: "BIM"
+          pageRef: "/bim"
+          weight: 4
+        - name: "Descargas"
+          pageRef: "/downloads"
+          weight: 5
+        - name: "Servicios AEC"
+          pageRef: "/aec-services"
+          weight: 6
+        - name: "Contactos"
+          pageRef: "/contacts"
+          weight: 7
+        - name: "Síguenos"
+          pageRef: "/follow-us"
+          weight: 8
 
 disableKinds:
   - taxonomy
