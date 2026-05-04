@@ -48,3 +48,7 @@ Pull requests should include a brief description, note whether both languages we
 ## Deployment Notes
 
 The site is intended for GitHub Pages. Repository settings should use **Pages > Build and deployment > Source: GitHub Actions**. Pushes to `main` deploy through the Hugo workflow referenced in the README.
+
+## Agent-Specific Instructions
+
+This repo includes a local Codex skill at `.codex/skills/release/SKILL.md`. Use it when asked to release a feature branch, squash-merge work onto `main`, or push completed changes to origin.
